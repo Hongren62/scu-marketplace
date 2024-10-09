@@ -1,0 +1,41 @@
+.nft-list {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+.nft-list h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.nft-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nft-list li {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+.nft-list li:last-child {
+  border-bottom: none;
+}
+
+.nft-list p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.nft-list strong {
+  color: #333;
+}

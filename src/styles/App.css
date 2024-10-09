@@ -1,0 +1,43 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.components-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.component {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .components-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .component {
+    width: 100%;
+  }
+}
