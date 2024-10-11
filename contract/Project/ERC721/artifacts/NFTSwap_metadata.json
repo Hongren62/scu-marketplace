@@ -1,0 +1,377 @@
+{
+	"compiler": {
+		"version": "0.8.21+commit.d9974bed"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "seller",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "nftAddr",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					}
+				],
+				"name": "List",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "buyer",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "nftAddr",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					}
+				],
+				"name": "Purchase",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "seller",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "nftAddr",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Revoke",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "seller",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "nftAddr",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "newPrice",
+						"type": "uint256"
+					}
+				],
+				"name": "Update",
+				"type": "event"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_nftAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					}
+				],
+				"name": "list",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "nftList",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC721Received",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_nftAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "purchase",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_nftAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "revoke",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_nftAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_newPrice",
+						"type": "uint256"
+					}
+				],
+				"name": "update",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"專題/ERC721/NFTswap.sol": "NFTSwap"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"專題/ERC721/Address.sol": {
+			"keccak256": "0x771d6eb301b091649776c374a1d1466469f45cc2db8c039e6072ad1238175d58",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1e78e981b77a978e2039169216d310874c64da035ec482817213fb51de28a047",
+				"dweb:/ipfs/QmNU879j32bZgaNE3ojtQJFGne1zt6RY5cWoEzCaMjFTK8"
+			]
+		},
+		"專題/ERC721/ERC721.sol": {
+			"keccak256": "0xc414af1c101ff38137675d79f6ca6ddb0540c7fd28fe9a057989e3b18906a2ba",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://522a7b9581f3050d023acafe505a7fcc2d2f10141b9acc7b28d1334d6bbbc2e8",
+				"dweb:/ipfs/QmaHrUYBmvyiwBETsKQTFALTeF9DuKLRCPfMv4RRpjthS3"
+			]
+		},
+		"專題/ERC721/IERC165.sol": {
+			"keccak256": "0x492f630b9c78d9f7bf2713d2ac8e651a14a48e38fb829e3f4b07b770db1b0b92",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://47f7cb1af1a5ea477c83de97dc2ef59fa2b630bfaf266969b5a4f6c5dfff06ad",
+				"dweb:/ipfs/QmYCXVMaiPZMbGXMdcKMK5rVx8bKJfTdVbXQsFU2ZS1jPj"
+			]
+		},
+		"專題/ERC721/IERC721.sol": {
+			"keccak256": "0xe7a0e16eff7cf9213736fac9d3521cb5d51c42ebbf9f9f44bba8d82cb0e871dc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://27cc62289bc6420698ab09fcea116a91aebacd43ec5e5bf6c42bdd0ca653b9b9",
+				"dweb:/ipfs/QmdRfCuKyHrftAhpa9D2HzDbiNQoRXQLAXFYCgw1j1MCwz"
+			]
+		},
+		"專題/ERC721/IERC721Metadata.sol": {
+			"keccak256": "0x098c0358661d09857ba84b64b96dad61565c225a66279ab562f4e02f6cae9594",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ffc289433c97eff7f28cc2f6e4efd5968a45310655da9228876562425cca7603",
+				"dweb:/ipfs/QmRLsCHbr2Teyu8uoVo2uvEU8SucYv5saNbYeMTFvbrpn4"
+			]
+		},
+		"專題/ERC721/IERC721Receiver.sol": {
+			"keccak256": "0xa7c850fdbb5ebdc5b09a9f398c2a07019f1c2c1386631b20ed0d4a4ae807955d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://89c66355559ba9f50e22e338fe1e040c035b953ffec260f95f6675df30c8185d",
+				"dweb:/ipfs/QmVwTJrkCdQwjdQqyNaTeyGkQHeU9FTUXX2N8QLvnSx9zy"
+			]
+		},
+		"專題/ERC721/NFTswap.sol": {
+			"keccak256": "0x4ab2c2f2f0ae4b6c9558399412c75f52a34eca73d413074f9915b0ce87cb6041",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e4f4a5d888b4fd6bae128c0b3f9321ee39abd4c96dd6b61f43033433208b0eb9",
+				"dweb:/ipfs/QmUgmrxQoL5ppTcwFJSde3KrWpQiVZLcU9qgtyygN4LJwU"
+			]
+		},
+		"專題/ERC721/SCUtest.sol": {
+			"keccak256": "0x5d34bbb0edfb6a58036e99e3d1c96465d8c6961c08e67b608d81883da31af29f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0af78de38b493f7d64c9e178c5bbac469a6465773b8c822b66f89cba409c71f3",
+				"dweb:/ipfs/QmeuhDV6cU5UvBLkMqAeM1Q49TfL6EDwgDmwyBQxSzK2A2"
+			]
+		},
+		"專題/ERC721/String.sol": {
+			"keccak256": "0x35879cd15c16fb1e05bdf649d3768db9b2a32aa99aa9d22172a9550a63946f64",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a239a5a36d6a5beb4c049f16061c3577b02cca9b90893c863629315f731fd61c",
+				"dweb:/ipfs/QmWi1okMLtNhrCC798UGdehZFrekr16iYu4gWPfL8iDCAJ"
+			]
+		}
+	},
+	"version": 1
+}
