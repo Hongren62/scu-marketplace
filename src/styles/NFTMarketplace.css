@@ -1,0 +1,189 @@
+/* NFT Marketplace */
+.nft-marketplace {
+  font-family: "Arial", sans-serif;
+  background-color: #1c1c1e;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  min-width: 600px;
+  margin-top: 24px;
+}
+
+.nft-marketplace h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.nft-marketplace h3 {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: #f8f8f8;
+}
+
+.error {
+  color: red;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.list-nft {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.list-form-group {
+  margin-bottom: 15px;
+}
+
+.list-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #444;
+  border: 1px solid #555;
+  color: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.list-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2a82ff;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.list-button:hover {
+  background-color: #1d5bb0;
+}
+
+.list-button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.list-error {
+  color: red;
+  font-size: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #2e2e2e;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+li p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+li input {
+  padding: 10px;
+  background-color: #444;
+  border: 1px solid #555;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 150px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 12px;
+  background-color: #f39c12;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #d87a00;
+}
+
+button:disabled {
+  background-color: #444;
+  cursor: not-allowed;
+}
+
+button + button {
+  margin-left: 10px;
+}
+
+.collection-approvals {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.collection-approvals button {
+  background-color: #e74c3c;
+}
+
+.collection-approvals button:hover {
+  background-color: #c0392b;
+}
+
+.alert {
+  background-color: #f1c40f;
+  color: black;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.alert-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.alert-description {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .nft-marketplace {
+    padding: 20px;
+  }
+
+  .list-input {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .list-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .collection-approvals {
+    padding: 12px;
+  }
+
+  .alert {
+    padding: 12px;
+  }
+}

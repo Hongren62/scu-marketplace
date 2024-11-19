@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Web3 from "web3";
 import detectEthereumProvider from "@metamask/detect-provider";
+import "./styles/WalletConnect.css";
 
 function WalletConnect({ onConnect }) {
   const [account, setAccount] = useState(null);

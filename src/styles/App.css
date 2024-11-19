@@ -1,43 +1,106 @@
-.App {
-  font-family: Arial, sans-serif;
-  text-align: center;
+/* App.css */
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 20vh;
+.App {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
+}
+
+.App-header {
+  background-color: #4e73df;
   color: white;
-}
-
-.components-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  width: 100%;
   padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+  letter-spacing: 1px;
 }
 
-.component {
-  background-color: #ffffff;
+h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e65c50;
+}
+
+.NFTMarketplace {
+  margin-top: 40px;
+  width: 80%;
+  max-width: 1200px;
+  background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin: 10px;
-  width: 300px;
-  box-sizing: border-box;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
-  .components-container {
-    flex-direction: column;
-    align-items: center;
-  }
+.NFTMarketplace h2 {
+  font-size: 2rem;
+  color: #4e73df;
+  margin-bottom: 20px;
+}
 
-  .component {
-    width: 100%;
-  }
+.NFTMarketplace .nft-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.NFTMarketplace .nft-item:hover {
+  background-color: #f1f1f1;
+}
+
+.NFTMarketplace .nft-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+}
+
+.NFTMarketplace .nft-item .info {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.NFTMarketplace .nft-item .info p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.NFTMarketplace .nft-item .info .price {
+  color: #ff6f61;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #888;
 }
